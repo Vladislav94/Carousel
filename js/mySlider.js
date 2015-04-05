@@ -15,7 +15,7 @@
 	       	pagination: '.pagination',
 	       	paginationItem: 'li',
 	       	carousel: true,
-	       	effect: 'fade'
+	       	effect: 'slide'
 		}, options);
 	 	var i = 1;
 		var slidesSize = $(opts.sliderName + ' ' + opts.slideName).size();
