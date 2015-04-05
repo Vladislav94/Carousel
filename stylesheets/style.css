@@ -39,10 +39,10 @@ h1 {
 	margin: auto;
 	position: relative;
 }
-.slider-wrap2 .slides {
+.slider2 .slides {
 	height: 500px;
 }
-.slider-wrap2 .slide {
+.slider2 .slide {
 	width: 1000px;
 	height: 500px;
 }
@@ -146,10 +146,10 @@ h1 {
 		width: 800px;
 		height: 450px;
 	}
-	.slider-wrap2 .slides {
+	.slider2 .slides {
 		height: 450px;
 	}
-	.slider-wrap2 .slide {
+	.slider2 .slide {
 		width: 800px;
 		height: 450px;
 	}

@@ -115,7 +115,9 @@
 <script src="js/mySlider.js"></script>
 <script>
 $(document).ready(function(){
-	$('.slider-wrap').mySlider();
+	$('.slider-wrap').mySlider({
+		effect: 'fade'
+	});
 	$('.slider-wrap').mySlider({
 		sliderName: '.slider2',
 		auto: false
