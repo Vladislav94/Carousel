@@ -9,10 +9,13 @@ h1 {
 	color: #fff;
 }
 .slider-wrap {
-	width: 1200px;
-	margin: auto;
 	margin-top: 50px;
 	margin-bottom: 100px;
+	position: relative;
+}
+.slider {
+	width: 1200px;
+	margin: auto;
 	position: relative;
 }
 .slider-container {
@@ -31,8 +34,10 @@ h1 {
 	overflow: hidden;
 	position: relative;
 }
-.slider-wrap2 {
+.slider2 {
 	width: 1000px;
+	margin: auto;
+	position: relative;
 }
 .slider-wrap2 .slides {
 	height: 500px;
@@ -87,7 +92,6 @@ h1 {
 	margin-right: 8px;
 	background: #666;
 	cursor: pointer;
-	box-shadow: inset -1px -1px #555;
 	-webkit-transition: .5s;
 	-o-transition: .5s;
 	transition: .5s;
@@ -127,5 +131,26 @@ h1 {
 	}
 	100% {
 		bottom: 0;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.slider,
+	.slider2 {
+		width: 800px;
+	}
+	.slides {
+		height: 450px;
+	}
+	.slide {
+		width: 800px;
+		height: 450px;
+	}
+	.slider-wrap2 .slides {
+		height: 450px;
+	}
+	.slider-wrap2 .slide {
+		width: 800px;
+		height: 450px;
 	}
 }
