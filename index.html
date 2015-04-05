@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Test job</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+<div class="slider-wrap">
+	<div class="slider">
+		<a href="#" class="btn-prev">prev</a>
+		<a href="#" class="btn-next">next</a>
+		<div class="slider-container">
+			<div class="slides">
+				<div class="slide slide1 active">
+					<div class="animate">
+						up
+					</div>
+				</div>
+				<div class="slide slide2">
+					<div class="animate">
+						up
+					</div>
+				</div>
+				<div class="slide slide3">
+					<div class="animate">
+						up
+					</div>
+				</div>
+				<div class="slide slide4">
+					<div class="animate">
+						up
+					</div>
+				</div>
+				<div class="slide slide5">
+					<div class="animate">
+						up
+					</div>
+				</div>
+				<div class="slide slide6">
+					<div class="animate">
+						up
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="pagination">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/mySlider.js"></script>
+<script>
+$(document).ready(function(){
+	$('.slider-wrap').mySlider();
+	$('.slider-wrap').mySlider({
+		sliderName: '.slider2',
+		auto: false
+	});
+});
+	
+
+</script>
+</body>
+</html>
