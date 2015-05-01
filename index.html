@@ -8,14 +8,10 @@
 	<link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-<h1>It's My Slider!!!</h1>
 <div class="slider-wrap">
 	<div class="slider">
-		<a href="#" class="btn-prev"></a>
-		<a href="#" class="btn-next"></a>
-		<div class="slider-container">
-			<div class="slides">
-				<div class="slide active">
+	<div class="slider-inner">
+			<div class="slide">
 					<img src="img/Ahri.jpg" alt="">
 					<div class="animate">
 						<span>Champion Ahri</span>
@@ -51,79 +47,54 @@
 						<span>Champion Caitlyn</span>
 					</div>
 				</div>
-			</div>
 		</div>
-		<ul class="pagination">
-			<li class="active"></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+	</div>
+	<div class="range-slider">
+		<div class="range-track"></div>
+		<div class="range-drag"></div>
 	</div>
 </div>
 <div class="slider-wrap">
-	<div class="slider2">
-		<a href="#" class="btn-prev"></a>
-		<a href="#" class="btn-next"></a>
-		<div class="slider-container">
-			<div class="slides">
-				<div class="slide active">
-					<img src="img/ShenZhen.jpg" alt="">
-					<div class="animate">
-						<span>ShenZhen City</span>
-					</div>
+	<div class="slider slider-small">
+	<div class="slider-inner">
+			<div class="slide active">
+				<img src="img/ShenZhen.jpg" alt="">
+				<div class="animate">
+					<span>ShenZhen City</span>
 				</div>
-				<div class="slide">
-					<img src="img/Beijing.jpg" alt="">
-					<div class="animate">
-						<span>Beijing City</span>
-					</div>
+			</div>
+			<div class="slide">
+				<img src="img/Beijing.jpg" alt="">
+				<div class="animate">
+					<span>Beijing City</span>
 				</div>
-				<div class="slide">
-					<img src="img/Shanghai.jpg" alt="">
-					<div class="animate">
-						<span>Shanghai City</span>
-					</div>
+			</div>
+			<div class="slide">
+				<img src="img/Shanghai.jpg" alt="">
+				<div class="animate">
+					<span>Shanghai City</span>
 				</div>
-				<div class="slide">
-					<img src="img/Tianjin.jpg" alt="">
-					<div class="animate">
-						<span>Tianjin City</span>
-					</div>
+			</div>
+			<div class="slide">
+				<img src="img/Tianjin.jpg" alt="">
+				<div class="animate">
+					<span>Tianjin City</span>
 				</div>
-				<div class="slide">
-					<img src="img/Suzhou.jpg" alt="">
-					<div class="animate">
-						<span>Suzhou City</span>
-					</div>
+			</div>
+			<div class="slide">
+				<img src="img/Suzhou.jpg" alt="">
+				<div class="animate">
+					<span>Suzhou City</span>
 				</div>
 			</div>
 		</div>
-		<ul class="pagination">
-			<li class="active"></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+	</div>
+	<div class="range-slider">
+		<div class="range-track"></div>
+		<div class="range-drag"></div>
 	</div>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/mySlider.js"></script>
-<script>
-$(document).ready(function(){
-	$('.slider-wrap').mySlider({
-		effect: 'fade'
-	});
-	$('.slider-wrap').mySlider({
-		sliderName: '.slider2',
-		auto: false
-	});
-});	
-
-</script>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
