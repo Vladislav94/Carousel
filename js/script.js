@@ -39,7 +39,7 @@
 			var offsetRangeX = $(this).offset().left
 			var slideInnerW = $(this).prev().find(opts.sliderInner).width()-sliderW;
 			var sliderProc = slideInnerW/100;
-			$('.mouse-down').parent().mousemove(function(e){
+			$(document).bind('mousemove', function(e){
 				var cursorPos = e.pageX - offsetRangeX;
 				var cursorProc = cursorPos*100;
 				var posProc = cursorProc/rangeW;
@@ -55,6 +55,7 @@
 			return false
 		});
 		$(document).mouseup(function(){
+			$(document).unbind('mousemove');
 			$(opts.sliderName).removeClass('mouse-down');
 		});
 	};
