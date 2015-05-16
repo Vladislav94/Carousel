@@ -4,100 +4,93 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Test job</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-<div class="slider-wrap">
+<div class="wrapper">
+<div class="carousel carousel1">
 	<div class="slider">
-	<div class="slider-inner">
-			<div class="slide">
-					<img src="img/Ahri.jpg" alt="">
-					<div class="animate">
-						<span>Champion Ahri</span>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="img/Jinx.jpg" alt="">
-					<div class="animate">
-						<span>Champion Jinx</span>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="img/Riven.jpg" alt="">
-					<div class="animate">
-						<span>Champion Riven</span>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="img/Leblanc.jpg" alt="">
-					<div class="animate">
-						<span>Champion Leblanc</span>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="img/akaly.jpg" alt="">
-					<div class="animate">
-						<span>Champion Akaly</span>
-					</div>
-				</div>
-				<div class="slide">
-					<img src="img/Caitlyn.jpg" alt="">
-					<div class="animate">
-						<span>Champion Caitlyn</span>
-					</div>
-				</div>
+		<div class="slide" style="width: 350px">
+			<img src="img/Ahri.jpg" alt="">
 		</div>
-	</div>
-	<div class="range-slider range-slider1">
-		<div class="range-track"></div>
-		<div class="range-drag"></div>
+		<div class="slide">
+			<img src="img/Jinx.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 450px">
+			<img src="img/Riven.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 350px">
+			<img src="img/Leblanc.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 450px">
+			<img src="img/akaly.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 450px">
+			<img src="img/Caitlyn.jpg" alt="">
+		</div>
 	</div>
 </div>
-<div class="slider-wrap">
-	<div class="slider slider-small">
-		<div class="slider-inner">
-			<div class="slide">
-				<img src="img/ShenZhen.jpg" alt="">
-				<div class="animate">
-					<span>ShenZhen City</span>
-				</div>
-			</div>
-			<div class="slide">
-				<img src="img/Beijing.jpg" alt="">
-				<div class="animate">
-					<span>Beijing City</span>
-				</div>
-			</div>
-			<div class="slide">
-				<img src="img/Shanghai.jpg" alt="">
-				<div class="animate">
-					<span>Shanghai City</span>
-				</div>
-			</div>
-			<div class="slide">
-				<img src="img/Tianjin.jpg" alt="">
-				<div class="animate">
-					<span>Tianjin City</span>
-				</div>
-			</div>
-			<div class="slide">
-				<img src="img/Suzhou.jpg" alt="">
-				<div class="animate">
-					<span>Suzhou City</span>
-				</div>
-			</div>
+</div>
+<div class="wrapper">
+<div class="carousel carousel2">
+	<div class="slider">
+		<div class="slide" style="width: 400px">
+			<img src="img/Ahri.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 400px">
+			<img src="img/Jinx.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 400px">
+			<img src="img/Riven.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 400px">
+			<img src="img/Leblanc.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 400px">
+			<img src="img/akaly.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 400px">
+			<img src="img/Caitlyn.jpg" alt="">
 		</div>
 	</div>
-	<div class="range-slider">
-		<div class="range-track"></div>
-		<div class="range-drag"></div>
+</div>
+</div>
+<div class="wrapper">
+<div class="carousel carousel3">
+	<div class="slider">
+		<div class="slide" style="width: 1000px;height:500px">
+			<img src="img/Ahri.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 1000px;height:500px">
+			<img src="img/Jinx.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 1000px;height:500px">
+			<img src="img/Riven.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 1000px;height:500px">
+			<img src="img/Leblanc.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 1000px;height:500px">
+			<img src="img/akaly.jpg" alt="">
+		</div>
+		<div class="slide" style="width: 1000px;height:500px">
+			<img src="img/Caitlyn.jpg" alt="">
+		</div>
 	</div>
+</div>
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 <script>
-$('.slider-wrap').rangePlugin();
+$('.carousel1').carousel();
+$('.carousel2').carousel({
+	visible: 2
+});
+$('.carousel3').carousel({
+	visible: 1
+});
+
 </script>
 </body>
 </html>
